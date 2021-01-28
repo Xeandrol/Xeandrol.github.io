@@ -119,8 +119,7 @@ section {
   height: 100vh;
   z-index: 0;
   position: relative;
-  background-size: 50%, 100%;
-  background-position-y: -120px, 0px;
+  background-size: 50%, 100% 120vh;
 }
 /* #top {
   background: url(/eKos\ rosso\ azzurro.png);
@@ -168,13 +167,13 @@ section {
 #dida {
   color: aliceblue;
   text-align: center;
-  font-size: 40px;
+  font-size: 4vh;
   font-family: fantasy;
   text-shadow: antiquewhite;
   z-index: 1;
-  top: 750px;
+  top: 75vh;
   position: relative;
-  letter-spacing: 4px;
+  letter-spacing: 0.4vh;
 }
 #check:checked ~ #top {
   transition: 0, 5s;
@@ -188,15 +187,15 @@ section {
 }
 
 #contatti {
-  font-size: 70px;
+  font-size: 7vh;
   font-family: fantasy;
   text-align: center;
   position: relative;
-  top: 10%;
-  letter-spacing: 10px;
+  top: 3vh;
+  letter-spacing: 1vh;
 }
 #contattinf {
-  font-size: 20px;
+  font-size: 2vh;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   position: relative;
@@ -221,38 +220,38 @@ section {
   transform: translate(-50%, -50%);
 }
 .container .social-icon {
-  width: 50px;
-  height: 50px;
+  width: 5vh;
+  height: 5vh;
   background: #eee;
-  border: 5px solid #eee;
+  border: 0.5vh solid #eee;
   float: left;
-  margin: 0px 5px;
+  margin: 0vh 0.5vh;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
 }
 .container .social-icon .icon {
-  width: 50px;
-  height: 50px;
-  line-height: 60px;
+  width: 5vh;
+  height: 5vh;
+  line-height: 6vh;
   text-align: center;
 }
 .container .social-icon .icon i.fa {
-  font-size: 30px;
+  font-size: 3vh;
   transition: all 400ms ease-in-out 100ms;
 }
 .container .social-icon .icon:after {
-  width: 50px;
-  height: 100px;
+  width: 5vh;
+  height: 10vh;
   content: "";
   display: block;
   background: red;
-  margin-top: -10px;
+  margin-top: -0.5vh;
   border-radius: 50%;
   transition: all 300ms ease-in-out;
 }
 .container .social-icon:hover .icon:after {
-  margin-top: -80px;
+  margin-top: -8vh;
 }
 .container .social-icon:hover .icon i.fa {
   color: #eee;
@@ -276,19 +275,22 @@ section {
 .container .social-icon.email .icon:after {
   background: blue;
 }
+.container .social-icon.bandcamp .icon:after {
+  background: rgb(25, 58, 119);
+}
 #copy {
   display: block;
   text-align: center;
   position: relative;
-  top: 165px;
+  top: 16.5vh;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 2vh;
 }
 #mail {
   display: block;
   text-align: center;
   position: relative;
-  top: 30px;
+  top: 3vh;
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
 }
