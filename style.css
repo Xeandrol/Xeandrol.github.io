@@ -1,0 +1,294 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+a {
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:focus {
+  text-decoration: none;
+  color: black;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+  z-index: 4;
+}
+.sidebar header {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 70px;
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 19px;
+  color: rgb(130, 228, 111);
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  transition: 0.5s;
+  font-family: fantasy;
+}
+ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar ul a i {
+  margin-right: 16px;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  border-radius: 3px;
+}
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: rgb(99, 112, 134);
+  padding: 2px 4px;
+  transition: all 0.5s;
+  position: fixed;
+  z-index: 111;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+  position: fixed;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#topimg {
+  position: relative;
+}
+section {
+  background: url(./ekos\ green.png) no-repeat, url(./bg\ main.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  position: relative;
+  background-size: 50%, 100%;
+  background-position-y: -120px, 0px;
+}
+/* #top {
+  background: url(/eKos\ rosso\ azzurro.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
+} */
+/* #ekosover {
+  position: absolute;
+  width: 20%;
+  z-index: 1;
+  top: 100px;
+} */
+
+#parent {
+  position: relative;
+}
+#spazio {
+  background-image: url(./space.jpeg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: relative;
+  background-size: cover;
+  filter: grayscale(10px);
+}
+#gems {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  width: 20%;
+  transition: all 0.5s ease-in-out;
+}
+#gems:hover {
+  width: 21%;
+}
+
+#dida {
+  color: aliceblue;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy;
+  text-shadow: antiquewhite;
+  z-index: 1;
+  top: 750px;
+  position: relative;
+  letter-spacing: 4px;
+}
+#check:checked ~ #top {
+  transition: 0, 5s;
+}
+#foresta {
+  background-image: url(./forest.jpeg);
+  width: 100%;
+  height: 30vh;
+  z-index: 0;
+  position: relative;
+}
+
+#contatti {
+  font-size: 70px;
+  font-family: fantasy;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  letter-spacing: 10px;
+}
+#contattinf {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  top: 15%;
+  text-transform: capitalize;
+}
+
+[data-scroll] {
+  transition: all 2s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transition: 3s;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+.container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .social-icon {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border: 5px solid #eee;
+  float: left;
+  margin: 0px 5px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.container .social-icon .icon {
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+.container .social-icon .icon i.fa {
+  font-size: 30px;
+  transition: all 400ms ease-in-out 100ms;
+}
+.container .social-icon .icon:after {
+  width: 50px;
+  height: 100px;
+  content: "";
+  display: block;
+  background: red;
+  margin-top: -10px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+}
+.container .social-icon:hover .icon:after {
+  margin-top: -80px;
+}
+.container .social-icon:hover .icon i.fa {
+  color: #eee;
+}
+
+.container .social-icon.facebook .icon:after {
+  background: #3b5998;
+}
+.container .social-icon.youtube .icon:after {
+  background: red;
+}
+.container .social-icon.instagram .icon:after {
+  background: #3f729b;
+}
+.container .social-icon.soundcloud .icon:after {
+  background: orangered;
+}
+.container .social-icon.spotify .icon:after {
+  background: green;
+}
+.container .social-icon.email .icon:after {
+  background: blue;
+}
+#copy {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 165px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+#mail {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
